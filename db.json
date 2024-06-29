@@ -1,0 +1,69 @@
+{
+    "menu-items": [
+      {
+        "id": "1",
+        "img": "https://public-cdn.menew.ir/icons/mono/Meal/Salad.svg",
+        "title": "سالادها"
+      },
+      {
+        "id": "2",
+        "img": "https://public-cdn.menew.ir/icons/mono/Meal/Fish-and-Chips-1.svg",
+        "title": "پیش غذا"
+      },
+      {
+        "id": "3",
+        "img": "https://public-cdn.menew.ir/icons/mono/Nationality/Sushi.svg",
+        "title": "sushi"
+      },
+      {
+        "id": "4",
+        "img": "https://public-cdn.menew.ir/icons/mono/steak.svg",
+        "title": "غذای اصلی گوشتی"
+      },
+      {
+        "id": "5",
+        "img": "https://public-cdn.menew.ir/icons/mono/noodle.svg",
+        "title": "پاستا"
+      },
+      {
+        "id": "6",
+        "img": "https://public-cdn.menew.ir/icons/mono/sea-food.svg",
+        "title": "غذای اصلی دریا"
+      },
+      {
+        "id": "7",
+        "img": "https://public-cdn.menew.ir/icons/mono/Meal/Fish-and-Chips.svg",
+        "title": "غذای اصلی ماکیان"
+      },
+      {
+        "id": "8",
+        "img": "https://public-cdn.menew.ir/icons/mono/Cafe_Bar/Mocktail.svg",
+        "title": "ماکتل بار"
+      },
+      {
+        "id": "9",
+        "img": "https://public-cdn.menew.ir/icons/mono/Cafe_Bar/Hot-Coffee-Based.svg",
+        "title": "بار گرم"
+      },
+      {
+        "id": "10",
+        "img": "https://public-cdn.menew.ir/icons/mono/dessert.svg",
+        "title": "دسر"
+      },
+      {
+        "id": "11",
+        "img": "https://public-cdn.menew.ir/icons/mono/Cafe_Bar/Herbal-Tea-1.svg",
+        "title": "چای بار"
+      },
+      {
+        "id": "12",
+        "img": "https://public-cdn.menew.ir/icons/mono/ice-coffee.svg",
+        "title": "آیس کافی"
+      },
+      {
+        "id": "13",
+        "img": "https://public-cdn.menew.ir/icons/mono/Others/Vegetable-1.svg",
+        "title": "قلیان Hookah Special"
+      }
+    ]
+  }

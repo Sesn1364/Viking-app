@@ -1,15 +1,28 @@
-// src/App.js
+// // ./pages/menu/Menu
 import React, { useState, useRef, useEffect } from 'react';
+import axios from 'axios';
 import CarouselMenu from '../../components/carousel menu/CarouselMenu';
 import ContentSection from '../../components/content section/ContentSection';
 
-const sections = ['Section 1', 'Section 2', 'Section 3', 'Section 4' , 'Section 5' , 'Section 6' , 'Section 7' , 'Section 8' , 'Section 9' , 'Section 10'];
-
 const Menu = () => {
+  const [menuItems, setMenuItems] = useState([]);
   const [activeSection, setActiveSection] = useState(0);
   const sectionRefs = useRef([]);
   const swiperRef = useRef(null);
   const isManuallyControlled = useRef(false);
+
+  useEffect(() => {
+    const fetchMenuItems = async () => {
+      try {
+        const response = await axios.get('http://localhost:4000/menu-items');
+        setMenuItems(response.data);
+      } catch (error) {
+        console.error('Error fetching menu items:', error);
+      }
+    };
+
+    fetchMenuItems();
+  }, []);
 
   const handleCarouselClick = (index) => {
     isManuallyControlled.current = true;
@@ -47,21 +60,28 @@ const Menu = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [activeSection]);
-  
+
+  // Conditional rendering while menuItems is empty or undefined
+  if (!menuItems || menuItems.length === 0) {
+    return <div>Loading...</div>; // You can customize loading indicator or message
+  }
 
   return (
     <div>
       <CarouselMenu
-        sections={sections}
+        sections={menuItems.map(item => ({
+          title: item.title,
+          img: item.img
+        }))}
         activeSection={activeSection}
         onClick={handleCarouselClick}
         ref={swiperRef}
       />
       <div className="pt-24">
-        {sections.map((section, index) => (
+        {menuItems.map((item, index) => (
           <ContentSection
             key={index}
-            section={section}
+            section={item.title}
             index={index}
             ref={el => sectionRefs.current[index] = el}
           />
@@ -72,3 +92,4 @@ const Menu = () => {
 };
 
 export default Menu;
+
