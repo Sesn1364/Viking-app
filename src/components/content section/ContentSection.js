@@ -1,4 +1,5 @@
 // src/components/content section/ContentSection
+import React from 'react';
 
 const ContentSection = React.forwardRef(({ section, index }, ref) => {
   return (
