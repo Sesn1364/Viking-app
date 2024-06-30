@@ -1,4 +1,5 @@
 {
+  "foods" : {
     "menu-items": [
       {
         "id": "1",
@@ -65,5 +66,123 @@
         "img": "https://public-cdn.menew.ir/icons/mono/Others/Vegetable-1.svg",
         "title": "قلیان Hookah Special"
       }
-    ]
+    ],
+   "سالادها":[
+            {
+                "id": "1",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf586DrZ-WJr1wTxylM1QcFtdSvCuDJX79Qg&s",
+                "name": "سالاد میکس و آووکادو",
+                "price": "۴۶۲"
+
+            },
+            {
+                "id": "2",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSymSt3quM3BOH7zxdf9zoif3XoNHS2TokAuA&s",
+                "name": "سالاد پولپو دریایی",
+                "price": "۸۲۲"
+
+            },
+            {
+                "id": "3",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPw8o3NXnTULbYVCeVfN4eGGuwHlI1Bq93Lw&s",
+                "name": "سالاد فانکی",
+                "price": "۸۳۰"
+
+            },
+            {
+                "id": "4",
+                "img": "https://media.istockphoto.com/id/175179542/photo/fillet-of-beef-with-salad.jpg?s=612x612&w=0&k=20&c=3bvNsKVM6V3TACKeHe6gC21Xq3An3XEq5v3vz6PZvcE=",
+                "name": "سالاد فیله گوساله",
+                "price": "۴۹۰"
+
+            },
+            {
+                "id": "5",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk6C5k9sOLRHlJQHTH629SxJ6DrPaui86iXA&s",
+                "name": "سالاد مرغ گریل",
+                "price": "۴۳۲"
+
+            },
+            {
+                "id": "6",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY6ZJvqnv5Gns04prIqm2vvg22_o9TksbyEw&s",
+                "name": "سالاد کینوا آووکادو",
+                "price": "۳۸۵"
+
+            },
+            {
+                "id": "7",
+                "img": "https://t3.ftcdn.net/jpg/02/93/22/02/360_F_293220207_aSKIua6mTAymZDbIJOSOApeJ7vNoD6Zd.jpg",
+                "name": "سالاد سبز",
+                "price": "۳۸۴"
+
+            }
+        ],
+        "پیش غذا":[
+            {
+                "id": "1",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4JunQ8apPgpSydxGg8tOtIC6u2-O1lz9ySw&s",
+                "name": "سوپ وایکینگ",
+                "price": "۱۶۰"
+
+            },
+            {
+                "id": "2",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCkZsOIDNhIOEetyMgbGgFD2PjKAaf6gl6Wg&s",
+                "name": "آلیولی میگو",
+                "price": "۷۹۰"
+
+            },
+            {
+                "id": "3",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmjvwzgMuGLeesqFJkN8Aiu8RN_ZPHTWBX1A&s",
+                "name": "تارتار سالمون با آووکادو",
+                "price": "۹۷۵"
+
+            },
+            {
+                "id": "4",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDBk0-RItQObzBz08KzvZN9KNtebbJmZNcog&s",
+                "name": "میگو آووکادو",
+                "price": "۹۷۰"
+
+            },
+            {
+                "id": "5",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShK-MJ9stLhWuLIYk9SWiua2kcFrc3Trk8SQ&s",
+                "name": "کارپاچیو گوشت و ترافل New",
+                "price": "۹۷۵"
+
+            },
+            {
+                "id": "6",
+                "img": "https://t3.ftcdn.net/jpg/02/61/88/66/360_F_261886633_SuKvhEg9VYOmY6QFDRycntzUbDWTtJtB.jpg",
+                "name": "کارپاچیو گوشت ",
+                "price": "۷۹۸"
+
+            },
+            {
+                "id": "7",
+                "img": "https://d3awvtnmmsvyot.cloudfront.net/api/file/geypdUJ6TmynUoEtg4u3/convert?fit=max&w=1170&h=658&quality=90&cache=true",
+                "name": "فومه آووکادو سالمون",
+                "price": "۹۷۰"
+
+            },
+            {
+                "id": "8",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvbKHOq6h7DGkynDi2qmYjDHN-vMhk3uw0Zw&s",
+                "name": "گواکامولی",
+                "price": "۵۴۶"
+
+            },
+            {
+                "id": "9",
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFi0_3FxdbGGa2sZqFQ6-5fYF_8QeXIdRRwQ&s",
+                "name": "تارتار گوشت",
+                "price": "۷۷۰"
+
+            }
+        ]
+  }
+    
   }
