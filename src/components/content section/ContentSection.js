@@ -47,15 +47,7 @@ const ContentSection = React.forwardRef(({ section, index }, ref) => {
           <div className="absolute bg-red-500 bottom-0 ">
             <p className="">{item.name}</p>
             <p className=''>{item.desc}</p>
-            <p className="">
-            {(item.name === "سلکشن کلاسیک|Classic selection" ||
-               item.name === "استیک ریب آی" ||
-               item.name === "شاه میگوی گریل با سس سالسا گوجه" ||
-               item.name === "ماهی حلوای مراکشی با سس سبزیجات" ||
-               item.name === "ماهی سوف با سس عدس" ||
-               item.name === "ماهی سوف با سس بالزامیک" ||
-               item.name === "ماهی سالمون با سس لمون باتر") ? `${item.price} میلیون تومان` : `${item.price} هزار تومان`}
-              </p>
+            <p className="">{item.price} هزار تومان</p>
           </div>
         </div>
         );
@@ -65,15 +57,17 @@ const ContentSection = React.forwardRef(({ section, index }, ref) => {
           <div className="relative bg-red-500 w-full pr-6 h-32">
             <p className="absolute top-0">{item.name}</p>
             <p className='absolute top-2/4'>{item.desc}</p>
-            <p className="absolute bottom-0">
-            {(item.name === "سلکشن کلاسیک|Classic selection" ||
-               item.name === "استیک ریب آی" ||
-               item.name === "شاه میگوی گریل با سس سالسا گوجه" ||
-               item.name === "ماهی حلوای مراکشی با سس سبزیجات" ||
-               item.name === "ماهی سوف با سس عدس" ||
-               item.name === "ماهی سوف با سس بالزامیک" ||
-               item.name === "ماهی سالمون با سس لمون باتر") ? `${item.price} میلیون تومان` : `${item.price} هزار تومان`}
-              </p>
+            <p className="absolute bottom-0">{item.price}هزار تومان</p>
+          </div>
+        </div>
+        )
+      } else if (item.name === "Hookah Special") {
+        return (
+          <div key={item.id} className="flex bg-slate-400 p-6">
+            <img src={item.img} alt={item.name} className="w-28 h-32" />
+          <div className="relative bg-red-500 w-full pr-6 h-32">
+            <p className="absolute top-0">{item.name}</p>
+            <p className='absolute top-2/4'>{item.desc}</p>
           </div>
         </div>
         )
