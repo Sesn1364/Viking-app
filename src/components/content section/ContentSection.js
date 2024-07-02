@@ -43,42 +43,42 @@ const ContentSection = React.forwardRef(({ section, index }, ref) => {
         item.name === "اکلر قهوه"  
       ) {
         return (
-          <div key={item.id} className="flex bg-slate-400 p-6 h-64 relative bg-cover bg-center" style={{ backgroundImage: `url(${item.bgImg})` }}>
-          <div className="absolute bg-red-500 bottom-0 ">
-            <p className="">{item.name}</p>
-            <p className=''>{item.desc}</p>
-            <p className="">{item.price} هزار تومان</p>
+          <div key={item.id} className="flex p-6 h-64 relative bg-cover bg-center rounded-2xl my-2" style={{ backgroundImage: `url(${item.bgImg})` }}>
+          <div className="absolute bottom-0 ">
+            <p className="text-white">{item.name}</p>
+            <p className='text-white'>{item.desc}</p>
+            <p className="text-white">{item.price} هزار تومان</p>
           </div>
         </div>
         );
       } else if (item.name === "چای لاته" || item.name === "دمنوش گلدن وانیلا") {
         return (
-          <div key={item.id} className="flex bg-slate-400 p-6">
-          <div className="relative bg-red-500 w-full pr-6 h-32">
-            <p className="absolute top-0">{item.name}</p>
-            <p className='absolute top-2/4'>{item.desc}</p>
-            <p className="absolute bottom-0">{item.price}هزار تومان</p>
+          <div key={item.id} className="flex bg-gray-700 p-6">
+          <div className="relative w-full pr-6 h-32">
+            <p className="absolute top-0 text-white">{item.name}</p>
+            <p className='absolute top-2/4 text-white'>{item.desc}</p>
+            <p className="absolute bottom-0 text-white">{item.price}هزار تومان</p>
           </div>
         </div>
         )
       } else if (item.name === "Hookah Special") {
         return (
-          <div key={item.id} className="flex bg-slate-400 p-6">
+          <div key={item.id} className="flex bg-gray-700 p-6">
             <img src={item.img} alt={item.name} className="w-28 h-32" />
-          <div className="relative bg-red-500 w-full pr-6 h-32">
-            <p className="absolute top-0">{item.name}</p>
-            <p className='absolute top-2/4'>{item.desc}</p>
+          <div className="relative w-full pr-6 h-32">
+            <p className="absolute top-0 text-white">{item.name}</p>
+            <p className='absolute top-2/4 text-white'>{item.desc}</p>
           </div>
         </div>
         )
       } else {
         return (
-          <div key={item.id} className="flex bg-slate-400 p-6">
+          <div key={item.id} className="flex bg-gray-700 p-6 my-2 rounded-2xl section">
           <img src={item.img} alt={item.name} className="w-28 h-32" />
-          <div className="relative bg-red-500 w-full pr-6">
-            <p className="absolute top-0">{item.name}</p>
-            <p className='absolute top-2/4'>{item.desc}</p>
-            <p className="absolute bottom-0">
+          <div className="relative w-full pr-6">
+            <p className="absolute top-0 text-white">{item.name}</p>
+            <p className='absolute top-2/4 text-white'>{item.desc}</p>
+            <p className="absolute bottom-0 text-white">
             {(item.name === "سلکشن کلاسیک|Classic selection" ||
                item.name === "استیک ریب آی" ||
                item.name === "شاه میگوی گریل با سس سالسا گوجه" ||
@@ -98,10 +98,10 @@ return (
     <div className='my-2'>
       <div class="flex items-center">
         <div class="flex-1 border-t border-secondary"></div>
-        <div class="mx-4 font-bold text-primary-foreground/60 text-md">{section}</div>
+        <div class="mx-4 font-bold text-gray-200 text-md">{section}</div>
         <div class="flex-1 border-t border-secondary"></div>
       </div>
-      <div ref={ref} className="items-center justify-center bg-gray-200 my-2">
+      <div ref={ref} className="bg-black my-2">
         {section === "سالادها" && renderItems(menuItems.salads)}
         {section === "پیش غذا" && renderItems(menuItems.appetizers)}
         {section === "sushi" && renderItems(menuItems.sushi)}
